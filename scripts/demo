@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -ef -o pipefail
+
+seq 1 10 | jq -R -c '[.]' | jq -s -c '{numbers:[.|flatten|.[]]}'
+
