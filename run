@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -ef -o pipefail
+
+  # --rm -it \
+  # --entrypoint "/bin/bash" \
+  # -d \
+docker run \
+  -d \
+  -p 8080:8080 \
+  --name bss_demo \
+  -v $(pwd)/scripts:/handlers \
+  nasoym/bss_extended:latest
+
