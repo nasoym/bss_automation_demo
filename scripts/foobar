@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -ef -o pipefail
 
-echo "FOOBAR foobar barfoo"
+echo "foooooo baaarrrrr"
 
